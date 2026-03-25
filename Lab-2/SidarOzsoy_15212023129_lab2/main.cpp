@@ -38,12 +38,12 @@ public:
     }
 
     void undo() {
-        if (head == nullptr) {
+        if (head == nullptr) {                              //Liste boş
             cout << "Nothing to undo.\n";
             return;
         }
 
-        if (head->next == nullptr) {
+        if (head->next == nullptr) {                        // Listede tek eleman var
             delete head;
             head = nullptr;
             cout << "Last word removed.\n";
